@@ -2,6 +2,7 @@
 using iTextSharp.text.pdf;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -44,19 +45,24 @@ namespace AGf_iTextLibrary.Model
 
         private void addIconTable(Document document, string Logopath, string LeftText)
         {
-            PdfPTable tworows = new PdfPTable(2);
-            tworows.WidthPercentage = 100;
-            PdfPCell cell = new PdfPCell(new Phrase(LeftText, rFont));
-            cell.BorderColor = BaseColor.WHITE;
-            cell.VerticalAlignment = PdfPCell.ALIGN_BOTTOM;
-            tworows.AddCell(cell);
-            Image gif = Image.GetInstance(Logopath);
-            gif.ScalePercent(65);
-            cell = new PdfPCell(gif);
-            cell.HorizontalAlignment = PdfPCell.ALIGN_RIGHT;
-            cell.BorderColor = BaseColor.WHITE;
-            tworows.AddCell(cell);
-            document.Add(tworows);
+            if (Logopath.Trim() != "")
+            {
+                if (Logopath.Trim().ToLower() == "default")
+                    Logopath = ConfigurationManager.AppSettings["defaultlogo"];
+                PdfPTable tworows = new PdfPTable(2);
+                tworows.WidthPercentage = 100;
+                PdfPCell cell = new PdfPCell(new Phrase(LeftText, rFont));
+                cell.BorderColor = BaseColor.WHITE;
+                cell.VerticalAlignment = PdfPCell.ALIGN_BOTTOM;
+                tworows.AddCell(cell);
+                Image gif = Image.GetInstance(Logopath);
+                gif.ScalePercent(65);
+                cell = new PdfPCell(gif);
+                cell.HorizontalAlignment = PdfPCell.ALIGN_RIGHT;
+                cell.BorderColor = BaseColor.WHITE;
+                tworows.AddCell(cell);
+                document.Add(tworows);
+            }
         }
 
         private void addtables(Document document, List<AGf_PDFTable> tabels)

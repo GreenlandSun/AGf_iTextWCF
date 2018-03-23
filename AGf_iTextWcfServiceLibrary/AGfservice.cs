@@ -14,7 +14,8 @@ namespace AGf_iTextWcfServiceLibrary
         AGf_PDRrepository repository = new AGf_PDRrepository();
         public byte[] getAGf_Document(AGf_Document document)
         {
-            return repository.getPDF(document);
+            byte[] b2r = repository.getPDF(document);
+            return b2r;
         }
     }
 }

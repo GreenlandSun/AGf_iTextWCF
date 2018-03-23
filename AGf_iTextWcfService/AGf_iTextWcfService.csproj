@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AGfiTextService.svc" />
+    <Content Include="Content\img\GSA.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -71,6 +72,8 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\PublishProfiles\AGfiText - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\Deployfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

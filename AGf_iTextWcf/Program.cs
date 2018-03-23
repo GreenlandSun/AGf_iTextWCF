@@ -20,7 +20,7 @@ namespace AGf_iTextWcf
                 Header = "ttt",
                 Keywords = "fff",
                 Lefttext = "ddd",
-                Logopath = @"C:\ag\img\airgreenland_logo.gif",
+                Logopath = "default",
                 Subject = "www",
                 Title = "xxx",
                 Tabels = new List<AGf_PDFTable>()
