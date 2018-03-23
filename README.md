@@ -16,4 +16,4 @@ AGf_iTextWCF Consist of four individual projects
 <p>iText and ITextSharp is licensed as AGPL software</p>
 <p>AGLP is a free / open source license.</p> 
 <p>This doesn't mean the software is <a href="https://en.wikipedia.org/wiki/Gratis_versus_libre" rel="nofollow">gratis</a>!</p>
-<p><strong>AGf_iTextWCF</strong> is licensed as <a href="/greenlandsun/AGf_iTextWCF/blob/master/LICENSE.md">WTFPL</a></p>
+<p><strong>AGf_iTextWCF</strong> is licensed as <a href="/LICENSE.md">WTFPL</a></p>
