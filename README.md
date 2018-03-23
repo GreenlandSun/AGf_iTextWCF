@@ -10,7 +10,7 @@ AGf_iTextWCF Consist of four individual projects
 </ul>
 <p>
   This project is hosted on
-  <a href="https://girhub.com/greenlandsun">https://github.com/greenlandsun</</a>
+  <a href="https://girhub.com/greenlandsun">https://github.com/greenlandsun</a>
 </p>
 <p><strong>AGf_iTextWCF</strong> uses iTextSharp dll, that is a .Net port of iText, both can be found ad <a href="https://github.com/itext">https://github.com/itext</a></p>
 <p>iText and ITextSharp is licensed as AGPL software</p>
