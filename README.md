@@ -13,7 +13,7 @@ AGf_iTextWCF Consist of four individual projects
   <a href="https://girhub.com/greenlandsun">https://github.com/greenlandsun</a>
 </p>
 <p><strong>AGf_iTextWCF</strong> uses iTextSharp dll, that is a .Net port of iText, both can be found ad <a href="https://github.com/itext">https://github.com/itext</a></p>
-<p>iText and ITextSharp is licensed as AGPL software</p>
+<p>iText and ITextSharp is licensed as <a href="https://github.com/itext/itextsharp/blob/develop/LICENSE.md">AGPL</a> software</p>
 <p>AGLP is a free / open source license.</p> 
 <p>This doesn't mean the software is <a href="https://en.wikipedia.org/wiki/Gratis_versus_libre" rel="nofollow">gratis</a>!</p>
 <p><strong>AGf_iTextWCF</strong> is licensed as <a href="/LICENSE.md">WTFPL</a></p>
